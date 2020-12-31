@@ -1,13 +1,21 @@
+:root {
+  --background: #212121;
+  --white: #ffffff;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 0px;
+  color: #ffffff;
+  background-color: var(--background);
 }
 
 header {
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: lightblue;
+  background-color: #212121de;
   height: 6vh;
   width: 100vw;
   max-width: 100vw;
@@ -15,6 +23,7 @@ header {
   position: fixed;
   z-index: 20;
 }
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -29,13 +38,17 @@ header {
   display: none;
   cursor: pointer;
 }
-
-.h1 {
-  color: aqua;
-  font-family: "Times New Roman", Times, serif;
+.close {
+  display: none;
 }
+
 .welcome-div {
   margin: 4em 0em;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+.welcome-div h2 {
+  font-size: 1.2rem;
 }
 
 .about-me {
@@ -52,7 +65,7 @@ header {
     right: 0px;
     height: 80vh;
     top: 6vh;
-    background-color: lightblue;
+    background-color: var(--background);
     display: none;
   }
   .nav li {
