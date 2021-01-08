@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 :root {
   --background: #212121;
   --white: #ffffff;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0px;
   color: #ffffff;
   background-color: var(--background);
@@ -23,17 +25,18 @@ header {
   position: fixed;
   z-index: 20;
 }
-
-.nav {
-  display: flex;
-  flex-direction: row;
-  margin-right: 25px;
-}
-.nav li {
-  margin: 0px 10px;
-  list-style: none;
+header a {
+  color: var(--white);
+  text-decoration: none;
 }
 
+.title {
+  padding-top: 0.3em;
+  font-size: 2em;
+}
+header h3 {
+  margin-left: 2em;
+}
 .burger {
   display: none;
   cursor: pointer;
@@ -41,21 +44,103 @@ header {
 .close {
   display: none;
 }
+main div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
 
+.nav {
+  display: flex;
+  flex-direction: row;
+  margin-right: 3em;
+}
+.nav li {
+  margin: 0px 10px;
+  list-style: none;
+}
 .welcome-div {
-  margin: 4em 0em;
-  font-size: 2rem;
+  margin: 6em 6.7em;
+  /* margin-top: 10em; */
+  font-size: 2.5rem;
   font-weight: lighter;
 }
 .welcome-div h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
-
-.about-me {
-  text-align: center;
+.flexer {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 .about-header {
   margin-bottom: 4em;
+  max-width: 65%;
+  text-align: center;
+  padding-top: 3em;
+}
+.about-header h3 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+.about-header h5 {
+  margin-top: 1.2em;
+  font-size: 1.3em;
+  margin-bottom: 7em;
+}
+
+#title {
+  text-align: center;
+}
+
+.portafolio {
+  padding-top: 1.7em;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.project {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.project h4 {
+  text-align: center;
+}
+.entire_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.entire_section > div:first-of-type {
+  margin-right: 3em;
+}
+.resume {
+  margin: 0px 10px;
+
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.picture img {
+  width: 540px;
+  height: 310px;
+  object-fit: cover;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.buttons > button:first-of-type {
+  margin-right: 20px;
+}
+.buttons button {
+  width: 8rem;
+
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 768px) {
