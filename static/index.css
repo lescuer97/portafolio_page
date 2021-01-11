@@ -32,6 +32,7 @@ header a {
 
 .title {
   padding-top: 0.3em;
+  padding-left: 1.5em;
   font-size: 2em;
 }
 header h3 {
@@ -60,10 +61,9 @@ main div {
   list-style: none;
 }
 .welcome-div {
-  margin: 6em 6.7em;
+  margin: 5.4em 6.7em;
   /* margin-top: 10em; */
   font-size: 2.5rem;
-  font-weight: lighter;
 }
 .welcome-div h2 {
   font-size: 1.3rem;
@@ -77,7 +77,7 @@ main div {
   margin-bottom: 4em;
   max-width: 65%;
   text-align: center;
-  padding-top: 3em;
+  padding-top: 6vh;
 }
 .about-header h3 {
   font-size: 2em;
@@ -86,7 +86,7 @@ main div {
 .about-header h5 {
   margin-top: 1.2em;
   font-size: 1.3em;
-  margin-bottom: 7em;
+  margin-bottom: 4em;
 }
 
 #title {
@@ -94,7 +94,7 @@ main div {
 }
 
 .portafolio {
-  padding-top: 1.7em;
+  padding-top: 6vh;
   width: 70%;
   display: flex;
   align-items: center;
@@ -137,13 +137,43 @@ main div {
 .buttons > button:first-of-type {
   margin-right: 20px;
 }
-.buttons button {
-  width: 8rem;
 
-  padding: 10px 0;
+button {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 40px;
+  background-color: transparent;
+  border-color: var(--white);
+}
+button a {
+  color: var(--white);
+  text-decoration: none;
+}
+.contactMe {
+  padding-top: 8vh;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
+.contactMe h1 h3 {
+  text-align: center;
+}
+.icons_row {
+  display: flex;
+  flex-direction: row;
+}
+.icon {
+  width: 2em;
+  height: 2em;
 }
 
 @media screen and (max-width: 768px) {
+  .title {
+    padding-top: 0.3em;
+    padding-left: 1.5em;
+    font-size: 1.5em;
+  }
   .nav {
     position: absolute;
     margin-top: 0px;
@@ -166,6 +196,45 @@ main div {
     display: none;
     margin-right: 10px;
     margin-top: 7px;
+  }
+  .welcome-div {
+    margin: 7em 1em;
+    /* margin-top: 10em; */
+    font-size: 1.6rem;
+  }
+  .welcome-div h2 {
+    font-size: 1rem;
+  }
+  .about-header {
+    max-width: 85%;
+  }
+  .portafolio {
+    width: 85%;
+  }
+
+  .entire_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .entire_section > div:first-of-type {
+    margin: 0em 1em;
+  }
+  .picture img {
+    width: 339px;
+    height: 195px;
+    object-fit: cover;
+  }
+  .resume {
+    width: 90%;
   }
 }
 
