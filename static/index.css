@@ -166,10 +166,20 @@ button a {
   display: flex;
   align-items: center;
   width: 100vw;
+  
 }
 .contactMe h1 h3 {
   text-align: center;
 }
+.contactMe h4 {
+
+  margin-bottom: 0em;
+}
+#email {
+  text-decoration: none;
+  color: var(--white);
+}
+
 .icons_row {
   display: flex;
   flex-direction: row;
@@ -178,6 +188,25 @@ button a {
   width: 2em;
   height: 2em;
 }
+
+
+.nav-active {
+  display: flex;
+  flex-direction: column;
+  align-items: centers;
+  width: 50%;
+  margin-right: 0px;
+}
+.nav-active li {
+  margin: 20px 0px;
+}
+.disapear {
+  display: none;
+}
+.appear {
+  display: block;
+}
+
 
 @media screen and (max-width: 768px) {
   .title {
@@ -252,21 +281,4 @@ button a {
   .resume {
     width: 90%;
   }
-}
-
-.nav-active {
-  display: flex;
-  flex-direction: column;
-  align-items: centers;
-  width: 50%;
-  margin-right: 0px;
-}
-.nav-active li {
-  margin: 20px 0px;
-}
-.disapear {
-  display: none;
-}
-.appear {
-  display: block;
 }
