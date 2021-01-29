@@ -94,6 +94,11 @@ main div {
   font-size: 1.3em;
   margin-bottom: 4em;
 }
+.project-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
 
 #title {
   text-align: center;
