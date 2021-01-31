@@ -144,12 +144,14 @@ main div {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .buttons > button:first-of-type {
   margin-right: 20px;
 }
 
 button {
+  margin: 10px 0px;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -160,6 +162,10 @@ button {
 button a {
   color: var(--white);
   text-decoration: none;
+}
+#special-repository {
+  margin-left: 20px;
+
 }
 .contactMe {
   padding-top: 8vh;
@@ -208,7 +214,7 @@ button a {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
   .title {
     padding-top: 0.3em;
     padding-left: 1.5em;
@@ -230,6 +236,14 @@ button a {
   }
   .nav li {
     opacity: 1;
+  }
+  .buttons {
+    justify-content: center;
+  }
+  #special-repository {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
   }
 
   .burger {
