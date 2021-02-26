@@ -22,36 +22,33 @@ const menuToggler = () => {
 
 const navCloser = () => {
   document.addEventListener("click", (e) => {
-    e.preventDefault();
     const isClickInside = nav.contains(e.target);
-    console.log(isClickInside);
+    // console.log(isClickInside);
     // check if click is outside nav and if it  didn't came from the burger
     if (
       !isClickInside &&
       nav.classList.contains("nav-active") &&
       !e.target.classList.contains("burger")
     ) {
-      console.log("click 1");
+      // console.log("click 1");
       menuToggler();
     }
     // // toggles the menu when clicking link and checks for screen size
-    // if (
-    //   e.target.classList.contains("link-button") &&
-    //   window.screen.width < 768
-    // ) {
-    //   console.log("click 2");
-    //   menuToggler();
-    // }
+    if (
+      e.target.classList.contains("link-button") &&
+      window.screen.width < 768
+    ) {
+      console.log("click 2");
+      menuToggler();
+    }
   });
 };
 const navSlide = () => {
   burger.addEventListener("click", (e) => {
-    e.preventDefault();
     //toggle nav
     menuToggler();
   });
   closeSvg.addEventListener("click", (e) => {
-    e.preventDefault();
     menuToggler();
   });
 };
