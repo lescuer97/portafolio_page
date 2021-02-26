@@ -73,6 +73,9 @@ main div {
 .welcome-div h2 {
   font-size: 1.3rem;
 }
+.cv {
+  max-width: 10em;
+}
 .flexer {
   width: 100%;
   display: flex;
@@ -169,7 +172,7 @@ button a {
   padding-top: 8vh;
   display: flex;
   align-items: center;
-  width: 100vw;
+  /* width: 100vw; */
 }
 .contactMe h1 h3 {
   text-align: center;
