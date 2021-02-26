@@ -36,7 +36,6 @@ header a {
 }
 
 .title-svg {
- 
   height: 60px;
   width: auto;
 }
@@ -165,20 +164,17 @@ button a {
 }
 #special-repository {
   margin-left: 20px;
-
 }
 .contactMe {
   padding-top: 8vh;
   display: flex;
   align-items: center;
   width: 100vw;
-  
 }
 .contactMe h1 h3 {
   text-align: center;
 }
 .contactMe h4 {
-
   margin-bottom: 0em;
 }
 #email {
@@ -195,25 +191,6 @@ button a {
   height: 2em;
 }
 
-
-.nav-active {
-  display: flex;
-  flex-direction: column;
-  align-items: centers;
-  width: 50%;
-  margin-right: 0px;
-}
-.nav-active li {
-  margin: 20px 0px;
-}
-.disapear {
-  display: none;
-}
-.appear {
-  display: block;
-}
-
-
 @media screen and (max-width: 860px) {
   .title {
     padding-top: 0.3em;
@@ -221,7 +198,6 @@ button a {
     font-size: 1.5em;
   }
   .title-svg {
- 
     height: 60px;
     width: auto;
   }
@@ -237,6 +213,17 @@ button a {
   .nav li {
     opacity: 1;
   }
+  .nav-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-right: 0px;
+  }
+  .nav-active li {
+    margin: 20px 0px;
+  }
+
   .buttons {
     justify-content: center;
   }
@@ -251,8 +238,13 @@ button a {
     margin-right: 10px;
     margin-top: 7px;
   }
-  .close {
+  .disapear {
     display: none;
+  }
+  .appear {
+    display: block;
+  }
+  .close {
     margin-right: 10px;
     margin-top: 7px;
   }
