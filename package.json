@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "astro": "^1.0.0-beta.73",
+    "github-slugger": "^1.4.0"
+  },
+  "dependencies": {}
+}

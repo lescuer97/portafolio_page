@@ -1,0 +1,77 @@
+---
+// Component Imports	
+import MainLayout from '../layouts/MainLayout.astro';
+import ProjectLayout from '../layouts/ProjectLayout.astro';
+// import posts from '../markdown/projects/*.md';
+const posts = await Astro.glob('../markdown/projects/*.md');
+
+---
+
+<MainLayout>
+	<div class="flexer">
+		<div class="welcome-div">
+			<h1>
+				Hi! ✌🏼, <br />
+				I'm Leonardo,
+			</h1>
+			<h2>A Developer with a passion for technology.</h2>
+			<button class="cv">
+				<a href="/cv_leonardo_escuer.pdf" target="_blank" rel="noopener noreferrer">Curriculum</a>
+			</button>
+		</div>
+		<div>
+			<svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-chevrons-down" width="80" height="80"
+				viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round"
+				stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+				<polyline points="7 7 12 12 17 7" />
+				<polyline points="7 13 12 18 17 13" />
+			</svg>
+		</div>
+		<div id="aboutme" class="about-header">
+			<h3>ABOUT ME</h3>
+			<h5>If you are wondering who I am...</h5>
+
+			<p>
+				My name is Leonardo, I'm a 23 years old self tought Developer, from
+				Madrid.
+			</p>
+			<p>
+				Since I was a kid, I grew in a technologist Family that owned a
+				telecom company, working in the company I worked from Reparing
+				Smartphones and working with VoIP phones i learned alot about
+				encryption and software. Later in life when i decided to go to
+				university I decided with Tourism, so i left the tech area for a
+				while, in the middle of my studies, I started to get interested
+				again in tech be cause of all the technology in tourism so I decided
+				to start learing programming formally
+			</p>
+			<p>
+				I started reading books and doing courses for learning started with
+				simple HTML and CSS and progressed to Javascript and during this
+				proccess I also learned the technical side of linux as my main
+				operating system and just started practicing and practicing and well
+				I have gotten better over time
+			</p>
+
+			<h2>My Current stack of Languages / Technologies is:</h2>
+
+			<p>
+				"HTML5 - CSS3 - JAVASCRIPT - REACTJS - NEXTJS - WEBPACK - PARCEL - FIREBASE - NODEJS - GRAPHQL - RUST -
+				WEBASSEMBLY - ACTIX WEB"
+			</p>
+		</div>
+		<div id="portafolio" class="portafolio">
+			<h1 id="title">The Portafolio</h1>
+
+			<h3 id="title">This is what I've been doing ;)</h3>
+
+			{posts.map(post =>
+			<ProjectLayout content={post?.frontmatter} post={post} />
+			)}
+		</div>
+
+
+	</div>
+</MainLayout>
+<!-- </Counter> -->

@@ -1,0 +1,35 @@
+---
+const { content } = Astro.props;
+
+---
+
+<div class="project">
+    <h4 class="project-title">{content?.title}</h4>
+    <div class="entire_section" id="reverse">
+        <div class="resume">
+            <div class="paragraph">
+                <p>
+                    {content?.description}
+                </p>
+            </div>
+            <div class="Technologies">
+                {content?.tech}
+
+            </div>
+
+            <div class="buttons">
+                <button class="demo">
+                    <a href={content?.url} target="_blank" rel="noopener noreferrer">Demo</a>
+                </button>
+
+                <button class="repository">
+                    <a href={content?.github} target="_blank" rel="noopener noreferrer">Respository</a>
+                </button>
+            </div>
+        </div>
+        <div class="picture">
+            <img src={content?.picture} alt="" />
+        </div>
+    </div>
+    <slot />
+</div>

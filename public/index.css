@@ -5,6 +5,10 @@
   --white: #ffffff;
 }
 
+html {
+  width: 100vw;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0px;
@@ -188,6 +192,7 @@ button a {
 .icons_row {
   display: flex;
   flex-direction: row;
+  align-content: center;
 }
 .icon {
   width: 2em;
