@@ -40,10 +40,10 @@ import '/public/index.css';
             </svg></a>
         <ul class="nav">
             <li class="nav-link">
-                <a href="#aboutme" class="link-button"> About Me</a>
+                <a href="/#aboutme" class="link-button"> About Me</a>
             </li>
-            <li class="nav-link"><a href="#portafolio" class="link-button">Portafolio</a></li>
-            <li class="nav-link"><a href="#contact" class="link-button">Contact</a></li>
+            <li class="nav-link"><a href="/#portafolio" class="link-button">Portafolio</a></li>
+            <li class="nav-link"><a href="/#contact" class="link-button">Contact</a></li>
             <li class="nav-link"><a href="/blog" class="link-button">Blog</a></li>
         </ul>
         <!-- burger svg -->
@@ -66,22 +66,23 @@ import '/public/index.css';
         </svg>
     </header>
 
-    <nav>
+    <!-- <nav>
         <a href="#">Home</a>
         <a href="#">Posts</a>
         <a href="#">Contact</a>
         <a href="/blog">Blog</a>
-    </nav>
+    </nav> -->
     <main>
         <slot /> <!-- your content is injected here -->
+       
+    </main>
+    <footer>
         <div id="contact" class="contactMe">
             <h1>Contact Me</h1>
     
             <h4  >You can talk to me and find me at:</h4>
             <h2><a id="email" href="mailto:leo@leito.dev"> leo@leito.dev </a></h2>
-            </div>
-    </main>
-    <footer>
+        </div>
         <div class="icons_row">
           <a href="" target="_blank" rel="noopener noreferrer" class="icon spotify"
           ><svg
