@@ -66,8 +66,8 @@ const posts = await Astro.glob('../markdown/projects/*.md');
 
 			<h3 id="title">This is what I've been doing ;)</h3>
 
-			{posts.map(post =>
-			<ProjectLayout content={post?.frontmatter} post={post} />
+			{posts.map((post, index) =>
+			<ProjectLayout content={post?.frontmatter} index={index} />
 			)}
 		</div>
 

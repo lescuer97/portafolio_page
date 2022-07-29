@@ -1,11 +1,12 @@
 ---
-const { content } = Astro.props;
+const { content, index } = Astro.props;
 
+const revert = index % 2;
 ---
 
 <div class="project">
     <h4 class="project-title">{content?.title}</h4>
-    <div class="entire_section" id="reverse">
+    <div class="entire_section" id={revert && "reverse" }>
         <div class="resume">
             <div class="paragraph">
                 <p>

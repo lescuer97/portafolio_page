@@ -136,6 +136,11 @@ main div {
   flex-direction: row;
   justify-content: center;
 }
+
+#reverse {
+  flex-direction: row-reverse;
+}
+
 .entire_section > div:first-of-type {
   margin-right: 3em;
 }
@@ -289,7 +294,7 @@ footer {
 
   .entire_section {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
