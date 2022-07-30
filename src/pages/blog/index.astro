@@ -1,10 +1,13 @@
 ---
 // Component Imports	
 import MainLayout from '../../layouts/MainLayout.astro';
-
-// import posts from '../markdown/projects/*.md';
-// const posts = await Astro.glob('../markdown/projects/*.md');
-
+const posts = await Astro.glob('./*.md');
 ---
 
-<MainLayout></MainLayout>
+<MainLayout>
+
+    {posts.map((post, index) =>
+    <a href={post.url}>{post.frontmatter.title}</a>
+    )}
+
+</MainLayout>
