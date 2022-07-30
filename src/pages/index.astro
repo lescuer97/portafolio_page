@@ -74,4 +74,71 @@ const posts = await Astro.glob('../markdown/projects/*.md');
 
 	</div>
 </MainLayout>
+
+<style>
+	.welcome-div {
+		margin: 5.4em 6.7em;
+		/* margin-top: 10em; */
+		font-size: 2.5rem;
+	}
+
+	.welcome-div h2 {
+		font-size: 1.3rem;
+	}
+
+	.cv {
+		max-width: 10em;
+	}
+
+	.flexer {
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	.about-header {
+		margin-bottom: 4em;
+		max-width: 65%;
+		text-align: center;
+		padding-top: 6vh;
+	}
+
+	.about-header h3 {
+		font-size: 2em;
+		margin-bottom: 0;
+	}
+
+	.about-header h5 {
+		margin-top: 1.2em;
+		font-size: 1.3em;
+		margin-bottom: 4em;
+	}
+
+	.portafolio {
+		padding-top: 6vh;
+		width: 70%;
+		display: flex;
+		align-items: center;
+	}
+
+	@media screen and (max-width: 860px) {
+		.welcome-div {
+			margin: 7em 1em;
+			/* margin-top: 10em; */
+			font-size: 1.6rem;
+		}
+
+		.welcome-div h2 {
+			font-size: 1rem;
+		}
+
+		.about-header {
+			max-width: 85%;
+		}
+
+		.portafolio {
+			width: 85%;
+		}
+	}
+</style>
 <!-- </Counter> -->

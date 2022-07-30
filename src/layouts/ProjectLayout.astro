@@ -34,3 +34,72 @@ const revert = index % 2;
     </div>
     <slot />
 </div>
+
+<style>
+    .project-title {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    #title {
+        text-align: center;
+    }
+
+
+    .project {
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+
+    .project h4 {
+        text-align: center;
+    }
+
+    .entire_section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #reverse {
+        flex-direction: row-reverse;
+    }
+
+    .entire_section>div:first-of-type {
+        margin-right: 3em;
+    }
+
+
+    @media screen and (max-width: 860px) {
+        .entire_section {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #reverse {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .entire_section>div:first-of-type {
+            margin: 0em 1em;
+        }
+
+        .picture img {
+            width: 339px;
+            height: 195px;
+            object-fit: cover;
+        }
+
+        .resume {
+            width: 90%;
+        }
+    }
+</style>

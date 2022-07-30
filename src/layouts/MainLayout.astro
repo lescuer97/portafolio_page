@@ -74,7 +74,6 @@ import '/public/index.css';
     </nav> -->
     <main>
         <slot /> <!-- your content is injected here -->
-       
     </main>
     <footer>
         <div id="contact" class="contactMe">
@@ -179,7 +178,121 @@ import '/public/index.css';
         </div>
     </footer>
 </body>
+
+
+<style>
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #212121de;
+  width: 100vw;
+  max-width: 100vw;
+  top: 0px;
+
+  z-index: 20;
+}
+header a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.title {
+  padding-top: 0.3em;
+  padding-left: 1.5em;
+  font-size: 2em;
+}
+
+.title-svg {
+  height: 60px;
+  width: auto;
+}
+header h3 {
+  margin-left: 2em;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  margin-right: 3em;
+}
+.nav li {
+  margin: 0px 10px;
+  list-style: none;
+}
+.contactMe h1 h3 {
+  text-align: center;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+.contactMe {
+  padding-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.contactMe h4 {
+  margin-bottom: 0em;
+}
+#email {
+  text-decoration: none;
+  color: var(--white);
+}
+.icons_row {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  width: 2em;
+  height: 2em;
+}
+
+@media screen and (max-width: 860px) {
+  .title {
+    padding-top: 0.3em;
+    padding-left: 1.5em;
+    font-size: 1.5em;
+  }
+  .title-svg {
+    height: 60px;
+    width: auto;
+  }
+  .nav {
+    position: absolute;
+    margin-top: 0px;
+    right: 0px;
+    height: 80vh;
+    top: 6vh;
+    background-color: var(--background);
+    display: none;
+  }
+  .nav li {
+    opacity: 1;
+  }
+  .nav-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-right: 0px;
+  }
+  .nav-active li {
+    margin: 20px 0px;
+  }
+}
+
+</style>
+
+
 <script>   
+
     const burger = document.querySelector(".burger");
     const nav = document.querySelector(".nav");
     const closeSvg = document.querySelector(".close");

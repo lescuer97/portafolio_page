@@ -22,36 +22,6 @@ body {
   justify-content: space-between;
 }
 
-header {
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #212121de;
-  width: 100vw;
-  max-width: 100vw;
-  top: 0px;
-
-  z-index: 20;
-}
-header a {
-  color: var(--white);
-  text-decoration: none;
-}
-
-.title {
-  padding-top: 0.3em;
-  padding-left: 1.5em;
-  font-size: 2em;
-}
-
-.title-svg {
-  height: 60px;
-  width: auto;
-}
-header h3 {
-  margin-left: 2em;
-}
 .burger {
   display: none;
   cursor: pointer;
@@ -69,84 +39,6 @@ main div {
   align-content: center;
 }
 
-.nav {
-  display: flex;
-  flex-direction: row;
-  margin-right: 3em;
-}
-.nav li {
-  margin: 0px 10px;
-  list-style: none;
-}
-.welcome-div {
-  margin: 5.4em 6.7em;
-  /* margin-top: 10em; */
-  font-size: 2.5rem;
-}
-.welcome-div h2 {
-  font-size: 1.3rem;
-}
-.cv {
-  max-width: 10em;
-}
-.flexer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.about-header {
-  margin-bottom: 4em;
-  max-width: 65%;
-  text-align: center;
-  padding-top: 6vh;
-}
-.about-header h3 {
-  font-size: 2em;
-  margin-bottom: 0;
-}
-.about-header h5 {
-  margin-top: 1.2em;
-  font-size: 1.3em;
-  margin-bottom: 4em;
-}
-.project-title {
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
-
-#title {
-  text-align: center;
-}
-
-.portafolio {
-  padding-top: 6vh;
-  width: 70%;
-  display: flex;
-  align-items: center;
-}
-.project {
-  text-align: justify;
-  display: flex;
-  flex-direction: column;
-  margin-top: 4rem;
-}
-.project h4 {
-  text-align: center;
-}
-.entire_section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-#reverse {
-  flex-direction: row-reverse;
-}
-
-.entire_section > div:first-of-type {
-  margin-right: 3em;
-}
 .resume {
   margin: 0px 10px;
 
@@ -183,86 +75,10 @@ button a {
   color: var(--white);
   text-decoration: none;
 }
-#special-repository {
-  margin-left: 20px;
-}
-
-.contactMe h1 h3 {
-  text-align: center;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5px;
-}
-.contactMe {
-  padding-top: 8vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-}
-.contactMe h4 {
-  margin-bottom: 0em;
-}
-#email {
-  text-decoration: none;
-  color: var(--white);
-}
-
-.icons_row {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-}
-.icon {
-  width: 2em;
-  height: 2em;
-}
 
 @media screen and (max-width: 860px) {
-  .title {
-    padding-top: 0.3em;
-    padding-left: 1.5em;
-    font-size: 1.5em;
-  }
-  .title-svg {
-    height: 60px;
-    width: auto;
-  }
-  .nav {
-    position: absolute;
-    margin-top: 0px;
-    right: 0px;
-    height: 80vh;
-    top: 6vh;
-    background-color: var(--background);
-    display: none;
-  }
-  .nav li {
-    opacity: 1;
-  }
-  .nav-active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    margin-right: 0px;
-  }
-  .nav-active li {
-    margin: 20px 0px;
-  }
-
   .buttons {
     justify-content: center;
-  }
-  #special-repository {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 20px;
   }
 
   .burger {
@@ -279,44 +95,5 @@ footer {
   .close {
     margin-right: 10px;
     margin-top: 7px;
-  }
-  .welcome-div {
-    margin: 7em 1em;
-    /* margin-top: 10em; */
-    font-size: 1.6rem;
-  }
-  .welcome-div h2 {
-    font-size: 1rem;
-  }
-  .about-header {
-    max-width: 85%;
-  }
-  .portafolio {
-    width: 85%;
-  }
-
-  .entire_section {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #reverse {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-  .entire_section > div:first-of-type {
-    margin: 0em 1em;
-  }
-  .picture img {
-    width: 339px;
-    height: 195px;
-    object-fit: cover;
-  }
-  .resume {
-    width: 90%;
   }
 }
