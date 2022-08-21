@@ -30,9 +30,7 @@ body {
   display: none;
   cursor: pointer;
 }
-main {
-  margin-top: 10rem;
-}
+
 main div {
   display: flex;
   flex-direction: column;
