@@ -1,29 +1,32 @@
 ---
-import MainLayout from './MainLayout.astro';
+import MainLayout from "./MainLayout.astro";
 
 // 1. The content prop gives access to frontmatter data
 const { content } = Astro.props;
 ---
-
-<html>
 
 <head>
     <!-- Add other Head elements here, like styles and meta tags. -->
     <title>leito.dev - {content.title}</title>
 </head>
 
-
 <MainLayout>
-    <!-- Add other UI components here, like common headers and footers. -->
-    <h1>{content.title}</h1>
-    <!-- 2. Rendered HTML will be passed into the default slot. -->
-    <div class="">
+    <div class="content">
+        <!-- Add other UI components here, like common headers and footers. -->
+        <h1>{content.title}</h1>
+        <!-- 2. Rendered HTML will be passed into the default slot. -->
 
         <slot />
-
     </div>
 </MainLayout>
+
+<style is:inline>
+    .content {
+        width: 85%;
+    }
+
+    p {
+        text-align: justify;
+    }
+</style>
 <!-- <p>Written on: {content.date}</p> -->
-
-
-</html>
