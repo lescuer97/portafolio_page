@@ -1,13 +1,13 @@
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker
-      .register("../sw_cached_pages.js")
-      .then((reg) => {})
-      .catch((err) => {
-        console.log(`Service Worker: ${err}`);
-      });
-  });
-}
+// if ("serviceWorker" in navigator) {
+//   window.addEventListener("load", () => {
+//     navigator.serviceWorker
+//       .register("../sw_cached_pages.js")
+//       .then((reg) => {})
+//       .catch((err) => {
+//         console.log(`Service Worker: ${err}`);
+//       });
+//   });
+// }
 
 const burger = document.querySelector(".burger");
 const nav = document.querySelector(".nav");
